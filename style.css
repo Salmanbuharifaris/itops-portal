@@ -29,14 +29,14 @@ h2 {
 }
 
 .dashboard-cards {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .card {
     background-color: white;
     padding: 25px;
-    width: 200px;
     border-radius: 8px;
 }
 
@@ -64,4 +64,28 @@ h2 {
 
 .activity p {
     color: #4b5563;
+}
+
+@media (max-width: 900px) {
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
 }
