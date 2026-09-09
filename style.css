@@ -2,13 +2,66 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    color: #d1d5db;
+    margin-bottom: 0;
+}
+
+main {
     padding: 40px;
 }
 
-h1 {
+h2 {
     color: #1f2937;
 }
 
-p {
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #4b5563;
+    margin-top: 0;
+}
+
+.card p {
+    color: #1f2937;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.recent-activity {
+    margin-top: 40px;
+}
+
+.activity {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.activity p {
     color: #4b5563;
 }
