@@ -1,12 +1,13 @@
 const totalAssets = 500;
-const openTickets = 24;
+let openTickets = 24;
 const users = 42;
 const locations = 18;
 const systems = 150;
 const ticketButton = document.getElementById("ticket-button");
 
 ticketButton.addEventListener("click", function () {
-    console.log("Button clicked");
+    openTickets = openTickets + 1;
+    document.getElementById("open-tickets").textContent = openTickets;
 });
 
 console.log("ITOps Portal loaded");
