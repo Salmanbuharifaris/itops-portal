@@ -4,11 +4,19 @@ const users = 42;
 const locations = 18;
 const systems = 150;
 
-const addTicketButton = document.getElementById("add-Ticket-Button");
-const closeTicketButton = document.getElementById("close-Ticket-Button");
+const addTicketButton = document.getElementById("add-ticket-button");
+const closeTicketButton = document.getElementById("close-ticket-button");
 
 function updateTicketDisplay() {
     document.getElementById("open-tickets").textContent = openTickets;
+}
+
+function updateDashboard() {
+    document.getElementById("total-assets").textContent = totalAssets;
+    document.getElementById("open-tickets").textContent = openTickets;
+    document.getElementById("users").textContent = users;
+    document.getElementById("locations").textContent = locations;
+    document.getElementById("systems").textContent = systems;
 }
 
 addTicketButton.addEventListener("click", function () {
@@ -27,8 +35,4 @@ closeTicketButton.addEventListener("click", function () {
 
 console.log("ITOps Portal loaded");
 
-document.getElementById("total-assets").textContent = totalAssets;
-document.getElementById("open-tickets").textContent = openTickets;
-document.getElementById("users").textContent = users;
-document.getElementById("locations").textContent = locations;
-document.getElementById("systems").textContent = systems;
+updateDashboard();
