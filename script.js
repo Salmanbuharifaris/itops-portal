@@ -14,14 +14,14 @@ function updateTicketDisplay() {
 addTicketButton.addEventListener("click", function () {
     if (openTickets < 100) {
         openTickets = openTickets + 1;
-        document.getElementById("open-tickets").textContent = openTickets;
+        updateTicketDisplay();
     }
 });
 
 closeTicketButton.addEventListener("click", function () {
     if (openTickets > 0) {
         openTickets = openTickets - 1;
-        document.getElementById("open-tickets").textContent = openTickets;
+        updateTicketDisplay();
     }
 });
 
