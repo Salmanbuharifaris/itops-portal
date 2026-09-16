@@ -13,8 +13,10 @@ ticketButton.addEventListener("click", function () {
 });
 
 closeticketButton.addEventListener("click", function () {
-    openTickets = openTickets - 1;
-    document.getElementById("open-tickets").textContent = openTickets;
+    if (openTickets > 0) {
+        openTickets = openTickets - 1;
+        document.getElementById("open-tickets").textContent = openTickets;
+    }
 });
 
 console.log("ITOps Portal loaded");
