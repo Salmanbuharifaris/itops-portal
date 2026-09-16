@@ -4,9 +4,16 @@ const users = 42;
 const locations = 18;
 const systems = 150;
 const ticketButton = document.getElementById("ticket-button");
+const closeticketButton = document.getElementById("closeticket-button");
+
 
 ticketButton.addEventListener("click", function () {
     openTickets = openTickets + 1;
+    document.getElementById("open-tickets").textContent = openTickets;
+});
+
+closeticketButton.addEventListener("click", function () {
+    openTickets = openTickets - 1;
     document.getElementById("open-tickets").textContent = openTickets;
 });
 
