@@ -3,6 +3,11 @@ const openTickets = 24;
 const users = 42;
 const locations = 18;
 const systems = 150;
+const ticketButton = document.getElementById("ticket-button");
+
+ticketButton.addEventListener("click", function () {
+    console.log("Button clicked");
+});
 
 console.log("ITOps Portal loaded");
 
