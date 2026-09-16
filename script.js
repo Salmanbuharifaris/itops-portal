@@ -3,18 +3,22 @@ let openTickets = 24;
 const users = 42;
 const locations = 18;
 const systems = 150;
-const ticketButton = document.getElementById("ticket-button");
-const closeticketButton = document.getElementById("closeticket-button");
 
+const addTicketButton = document.getElementById("addTicket-Button");
+const closeTicketButton = document.getElementById("closeTicket-Button");
 
-ticketButton.addEventListener("click", function () {
+function updateTicketDisplay() {
+    document.getElementById("open-tickets").textContent = openTickets;
+}
+
+addTicketButton.addEventListener("click", function () {
     if (openTickets < 100) {
         openTickets = openTickets + 1;
         document.getElementById("open-tickets").textContent = openTickets;
     }
 });
 
-closeticketButton.addEventListener("click", function () {
+closeTicketButton.addEventListener("click", function () {
     if (openTickets > 0) {
         openTickets = openTickets - 1;
         document.getElementById("open-tickets").textContent = openTickets;
