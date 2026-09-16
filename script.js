@@ -13,7 +13,6 @@ function updateTicketDisplay() {
 
 function updateDashboard() {
     document.getElementById("total-assets").textContent = totalAssets;
-    document.getElementById("open-tickets").textContent = openTickets;
     document.getElementById("users").textContent = users;
     document.getElementById("locations").textContent = locations;
     document.getElementById("systems").textContent = systems;
