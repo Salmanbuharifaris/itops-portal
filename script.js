@@ -8,8 +8,10 @@ const closeticketButton = document.getElementById("closeticket-button");
 
 
 ticketButton.addEventListener("click", function () {
-    openTickets = openTickets + 1;
-    document.getElementById("open-tickets").textContent = openTickets;
+    if (openTickets < 100) {
+        openTickets = openTickets + 1;
+        document.getElementById("open-tickets").textContent = openTickets;
+    }
 });
 
 closeticketButton.addEventListener("click", function () {
