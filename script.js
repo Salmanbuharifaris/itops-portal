@@ -4,8 +4,8 @@ const users = 42;
 const locations = 18;
 const systems = 150;
 
-const addTicketButton = document.getElementById("addTicket-Button");
-const closeTicketButton = document.getElementById("closeTicket-Button");
+const addTicketButton = document.getElementById("add-Ticket-Button");
+const closeTicketButton = document.getElementById("close-Ticket-Button");
 
 function updateTicketDisplay() {
     document.getElementById("open-tickets").textContent = openTickets;
